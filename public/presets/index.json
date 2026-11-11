@@ -1,0 +1,522 @@
+{
+ "presets": [
+  {
+   "id": "アイコン/DSC_0037",
+   "group": "アイコン",
+   "name": "DSC_0037",
+   "thumb": "/presets/thumb/DSC_0037.jpg",
+   "src": "/presets/view/DSC_0037.jpg"
+  },
+  {
+   "id": "アイコン/DSC_0038",
+   "group": "アイコン",
+   "name": "DSC_0038",
+   "thumb": "/presets/thumb/DSC_0038.jpg",
+   "src": "/presets/view/DSC_0038.jpg"
+  },
+  {
+   "id": "アイコン/DSC_0062",
+   "group": "アイコン",
+   "name": "DSC_0062",
+   "thumb": "/presets/thumb/DSC_0062.jpg",
+   "src": "/presets/view/DSC_0062.jpg"
+  },
+  {
+   "id": "アイコン/DSC_0088",
+   "group": "アイコン",
+   "name": "DSC_0088",
+   "thumb": "/presets/thumb/DSC_0088.jpg",
+   "src": "/presets/view/DSC_0088.jpg"
+  },
+  {
+   "id": "アイコン/DSC_0127",
+   "group": "アイコン",
+   "name": "DSC_0127",
+   "thumb": "/presets/thumb/DSC_0127.jpg",
+   "src": "/presets/view/DSC_0127.jpg"
+  },
+  {
+   "id": "アイコン/DSC_9945",
+   "group": "アイコン",
+   "name": "DSC_9945",
+   "thumb": "/presets/thumb/DSC_9945.jpg",
+   "src": "/presets/view/DSC_9945.jpg"
+  },
+  {
+   "id": "アイコン/SDIM2851",
+   "group": "アイコン",
+   "name": "SDIM2851",
+   "thumb": "/presets/thumb/SDIM2851.jpg",
+   "src": "/presets/view/SDIM2851.jpg"
+  },
+  {
+   "id": "アイコン/SDIM2852",
+   "group": "アイコン",
+   "name": "SDIM2852",
+   "thumb": "/presets/thumb/SDIM2852.jpg",
+   "src": "/presets/view/SDIM2852.jpg"
+  },
+  {
+   "id": "アイコン/SDIM2856",
+   "group": "アイコン",
+   "name": "SDIM2856",
+   "thumb": "/presets/thumb/SDIM2856.jpg",
+   "src": "/presets/view/SDIM2856.jpg"
+  },
+  {
+   "id": "アイコン/SDIM2878",
+   "group": "アイコン",
+   "name": "SDIM2878",
+   "thumb": "/presets/thumb/SDIM2878.jpg",
+   "src": "/presets/view/SDIM2878.jpg"
+  },
+  {
+   "id": "アイコン/SDIM2881",
+   "group": "アイコン",
+   "name": "SDIM2881",
+   "thumb": "/presets/thumb/SDIM2881.jpg",
+   "src": "/presets/view/SDIM2881.jpg"
+  },
+  {
+   "id": "シズル/DSC_0047",
+   "group": "シズル",
+   "name": "DSC_0047",
+   "thumb": "/presets/thumb/DSC_0047.jpg",
+   "src": "/presets/view/DSC_0047.jpg"
+  },
+  {
+   "id": "シズル/DSC_0056",
+   "group": "シズル",
+   "name": "DSC_0056",
+   "thumb": "/presets/thumb/DSC_0056.jpg",
+   "src": "/presets/view/DSC_0056.jpg"
+  },
+  {
+   "id": "シズル/DSC_0138",
+   "group": "シズル",
+   "name": "DSC_0138",
+   "thumb": "/presets/thumb/DSC_0138.jpg",
+   "src": "/presets/view/DSC_0138.jpg"
+  },
+  {
+   "id": "シズル/DSC_0142",
+   "group": "シズル",
+   "name": "DSC_0142",
+   "thumb": "/presets/thumb/DSC_0142.jpg",
+   "src": "/presets/view/DSC_0142.jpg"
+  },
+  {
+   "id": "シズル/DSC_0144",
+   "group": "シズル",
+   "name": "DSC_0144",
+   "thumb": "/presets/thumb/DSC_0144.jpg",
+   "src": "/presets/view/DSC_0144.jpg"
+  },
+  {
+   "id": "シズル/DSC_9999",
+   "group": "シズル",
+   "name": "DSC_9999",
+   "thumb": "/presets/thumb/DSC_9999.jpg",
+   "src": "/presets/view/DSC_9999.jpg"
+  },
+  {
+   "id": "シズル/SDIM2809",
+   "group": "シズル",
+   "name": "SDIM2809",
+   "thumb": "/presets/thumb/SDIM2809.jpg",
+   "src": "/presets/view/SDIM2809.jpg"
+  },
+  {
+   "id": "シズル/SDIM2863",
+   "group": "シズル",
+   "name": "SDIM2863",
+   "thumb": "/presets/thumb/SDIM2863.jpg",
+   "src": "/presets/view/SDIM2863.jpg"
+  },
+  {
+   "id": "ブレ/DSC_0007",
+   "group": "ブレ",
+   "name": "DSC_0007",
+   "thumb": "/presets/thumb/DSC_0007.jpg",
+   "src": "/presets/view/DSC_0007.jpg"
+  },
+  {
+   "id": "ブレ/DSC_0008",
+   "group": "ブレ",
+   "name": "DSC_0008",
+   "thumb": "/presets/thumb/DSC_0008.jpg",
+   "src": "/presets/view/DSC_0008.jpg"
+  },
+  {
+   "id": "ブレ/DSC_0149",
+   "group": "ブレ",
+   "name": "DSC_0149",
+   "thumb": "/presets/thumb/DSC_0149.jpg",
+   "src": "/presets/view/DSC_0149.jpg"
+  },
+  {
+   "id": "ブレ/DSC_0151",
+   "group": "ブレ",
+   "name": "DSC_0151",
+   "thumb": "/presets/thumb/DSC_0151.jpg",
+   "src": "/presets/view/DSC_0151.jpg"
+  },
+  {
+   "id": "ブレ/DSC_9966",
+   "group": "ブレ",
+   "name": "DSC_9966",
+   "thumb": "/presets/thumb/DSC_9966.jpg",
+   "src": "/presets/view/DSC_9966.jpg"
+  },
+  {
+   "id": "ブレ/DSC_9969",
+   "group": "ブレ",
+   "name": "DSC_9969",
+   "thumb": "/presets/thumb/DSC_9969.jpg",
+   "src": "/presets/view/DSC_9969.jpg"
+  },
+  {
+   "id": "ブレ/DSC_9970",
+   "group": "ブレ",
+   "name": "DSC_9970",
+   "thumb": "/presets/thumb/DSC_9970.jpg",
+   "src": "/presets/view/DSC_9970.jpg"
+  },
+  {
+   "id": "ブレ/DSC_9972",
+   "group": "ブレ",
+   "name": "DSC_9972",
+   "thumb": "/presets/thumb/DSC_9972.jpg",
+   "src": "/presets/view/DSC_9972.jpg"
+  },
+  {
+   "id": "ブレ/DSC_9973",
+   "group": "ブレ",
+   "name": "DSC_9973",
+   "thumb": "/presets/thumb/DSC_9973.jpg",
+   "src": "/presets/view/DSC_9973.jpg"
+  },
+  {
+   "id": "ブレ/SDIM2784",
+   "group": "ブレ",
+   "name": "SDIM2784",
+   "thumb": "/presets/thumb/SDIM2784.jpg",
+   "src": "/presets/view/SDIM2784.jpg"
+  },
+  {
+   "id": "ブレ/SDIM2805",
+   "group": "ブレ",
+   "name": "SDIM2805",
+   "thumb": "/presets/thumb/SDIM2805.jpg",
+   "src": "/presets/view/SDIM2805.jpg"
+  },
+  {
+   "id": "ブレ/SDIM2870",
+   "group": "ブレ",
+   "name": "SDIM2870",
+   "thumb": "/presets/thumb/SDIM2870.jpg",
+   "src": "/presets/view/SDIM2870.jpg"
+  },
+  {
+   "id": "景観/DSC_0002",
+   "group": "景観",
+   "name": "DSC_0002",
+   "thumb": "/presets/thumb/DSC_0002.jpg",
+   "src": "/presets/view/DSC_0002.jpg"
+  },
+  {
+   "id": "景観/DSC_0014",
+   "group": "景観",
+   "name": "DSC_0014",
+   "thumb": "/presets/thumb/DSC_0014.jpg",
+   "src": "/presets/view/DSC_0014.jpg"
+  },
+  {
+   "id": "景観/DSC_0017",
+   "group": "景観",
+   "name": "DSC_0017",
+   "thumb": "/presets/thumb/DSC_0017.jpg",
+   "src": "/presets/view/DSC_0017.jpg"
+  },
+  {
+   "id": "景観/DSC_0024",
+   "group": "景観",
+   "name": "DSC_0024",
+   "thumb": "/presets/thumb/DSC_0024.jpg",
+   "src": "/presets/view/DSC_0024.jpg"
+  },
+  {
+   "id": "景観/DSC_0026",
+   "group": "景観",
+   "name": "DSC_0026",
+   "thumb": "/presets/thumb/DSC_0026.jpg",
+   "src": "/presets/view/DSC_0026.jpg"
+  },
+  {
+   "id": "景観/DSC_0027",
+   "group": "景観",
+   "name": "DSC_0027",
+   "thumb": "/presets/thumb/DSC_0027.jpg",
+   "src": "/presets/view/DSC_0027.jpg"
+  },
+  {
+   "id": "景観/DSC_0032",
+   "group": "景観",
+   "name": "DSC_0032",
+   "thumb": "/presets/thumb/DSC_0032.jpg",
+   "src": "/presets/view/DSC_0032.jpg"
+  },
+  {
+   "id": "景観/DSC_0033",
+   "group": "景観",
+   "name": "DSC_0033",
+   "thumb": "/presets/thumb/DSC_0033.jpg",
+   "src": "/presets/view/DSC_0033.jpg"
+  },
+  {
+   "id": "景観/DSC_0036",
+   "group": "景観",
+   "name": "DSC_0036",
+   "thumb": "/presets/thumb/DSC_0036.jpg",
+   "src": "/presets/view/DSC_0036.jpg"
+  },
+  {
+   "id": "景観/DSC_0041",
+   "group": "景観",
+   "name": "DSC_0041",
+   "thumb": "/presets/thumb/DSC_0041.jpg",
+   "src": "/presets/view/DSC_0041.jpg"
+  },
+  {
+   "id": "景観/DSC_0050",
+   "group": "景観",
+   "name": "DSC_0050",
+   "thumb": "/presets/thumb/DSC_0050.jpg",
+   "src": "/presets/view/DSC_0050.jpg"
+  },
+  {
+   "id": "景観/DSC_0051",
+   "group": "景観",
+   "name": "DSC_0051",
+   "thumb": "/presets/thumb/DSC_0051.jpg",
+   "src": "/presets/view/DSC_0051.jpg"
+  },
+  {
+   "id": "景観/DSC_0052",
+   "group": "景観",
+   "name": "DSC_0052",
+   "thumb": "/presets/thumb/DSC_0052.jpg",
+   "src": "/presets/view/DSC_0052.jpg"
+  },
+  {
+   "id": "景観/DSC_0053",
+   "group": "景観",
+   "name": "DSC_0053",
+   "thumb": "/presets/thumb/DSC_0053.jpg",
+   "src": "/presets/view/DSC_0053.jpg"
+  },
+  {
+   "id": "景観/DSC_0054",
+   "group": "景観",
+   "name": "DSC_0054",
+   "thumb": "/presets/thumb/DSC_0054.jpg",
+   "src": "/presets/view/DSC_0054.jpg"
+  },
+  {
+   "id": "景観/DSC_0057",
+   "group": "景観",
+   "name": "DSC_0057",
+   "thumb": "/presets/thumb/DSC_0057.jpg",
+   "src": "/presets/view/DSC_0057.jpg"
+  },
+  {
+   "id": "景観/DSC_0091",
+   "group": "景観",
+   "name": "DSC_0091",
+   "thumb": "/presets/thumb/DSC_0091.jpg",
+   "src": "/presets/view/DSC_0091.jpg"
+  },
+  {
+   "id": "景観/DSC_0092",
+   "group": "景観",
+   "name": "DSC_0092",
+   "thumb": "/presets/thumb/DSC_0092.jpg",
+   "src": "/presets/view/DSC_0092.jpg"
+  },
+  {
+   "id": "景観/DSC_0105",
+   "group": "景観",
+   "name": "DSC_0105",
+   "thumb": "/presets/thumb/DSC_0105.jpg",
+   "src": "/presets/view/DSC_0105.jpg"
+  },
+  {
+   "id": "景観/DSC_0152",
+   "group": "景観",
+   "name": "DSC_0152",
+   "thumb": "/presets/thumb/DSC_0152.jpg",
+   "src": "/presets/view/DSC_0152.jpg"
+  },
+  {
+   "id": "景観/DSC_0153",
+   "group": "景観",
+   "name": "DSC_0153",
+   "thumb": "/presets/thumb/DSC_0153.jpg",
+   "src": "/presets/view/DSC_0153.jpg"
+  },
+  {
+   "id": "景観/DSC_9927",
+   "group": "景観",
+   "name": "DSC_9927",
+   "thumb": "/presets/thumb/DSC_9927.jpg",
+   "src": "/presets/view/DSC_9927.jpg"
+  },
+  {
+   "id": "景観/DSC_9936",
+   "group": "景観",
+   "name": "DSC_9936",
+   "thumb": "/presets/thumb/DSC_9936.jpg",
+   "src": "/presets/view/DSC_9936.jpg"
+  },
+  {
+   "id": "景観/DSC_9967",
+   "group": "景観",
+   "name": "DSC_9967",
+   "thumb": "/presets/thumb/DSC_9967.jpg",
+   "src": "/presets/view/DSC_9967.jpg"
+  },
+  {
+   "id": "景観/DSC_9975",
+   "group": "景観",
+   "name": "DSC_9975",
+   "thumb": "/presets/thumb/DSC_9975.jpg",
+   "src": "/presets/view/DSC_9975.jpg"
+  },
+  {
+   "id": "景観/DSC_9976",
+   "group": "景観",
+   "name": "DSC_9976",
+   "thumb": "/presets/thumb/DSC_9976.jpg",
+   "src": "/presets/view/DSC_9976.jpg"
+  },
+  {
+   "id": "景観/DSC_9978",
+   "group": "景観",
+   "name": "DSC_9978",
+   "thumb": "/presets/thumb/DSC_9978.jpg",
+   "src": "/presets/view/DSC_9978.jpg"
+  },
+  {
+   "id": "景観/DSC_9981",
+   "group": "景観",
+   "name": "DSC_9981",
+   "thumb": "/presets/thumb/DSC_9981.jpg",
+   "src": "/presets/view/DSC_9981.jpg"
+  },
+  {
+   "id": "景観/DSC_9983",
+   "group": "景観",
+   "name": "DSC_9983",
+   "thumb": "/presets/thumb/DSC_9983.jpg",
+   "src": "/presets/view/DSC_9983.jpg"
+  },
+  {
+   "id": "景観/DSC_9984",
+   "group": "景観",
+   "name": "DSC_9984",
+   "thumb": "/presets/thumb/DSC_9984.jpg",
+   "src": "/presets/view/DSC_9984.jpg"
+  },
+  {
+   "id": "景観/DSC_9985",
+   "group": "景観",
+   "name": "DSC_9985",
+   "thumb": "/presets/thumb/DSC_9985.jpg",
+   "src": "/presets/view/DSC_9985.jpg"
+  },
+  {
+   "id": "景観/DSC_9986",
+   "group": "景観",
+   "name": "DSC_9986",
+   "thumb": "/presets/thumb/DSC_9986.jpg",
+   "src": "/presets/view/DSC_9986.jpg"
+  },
+  {
+   "id": "景観/DSC_9987",
+   "group": "景観",
+   "name": "DSC_9987",
+   "thumb": "/presets/thumb/DSC_9987.jpg",
+   "src": "/presets/view/DSC_9987.jpg"
+  },
+  {
+   "id": "景観/DSC_9989",
+   "group": "景観",
+   "name": "DSC_9989",
+   "thumb": "/presets/thumb/DSC_9989.jpg",
+   "src": "/presets/view/DSC_9989.jpg"
+  },
+  {
+   "id": "景観/DSC_9990",
+   "group": "景観",
+   "name": "DSC_9990",
+   "thumb": "/presets/thumb/DSC_9990.jpg",
+   "src": "/presets/view/DSC_9990.jpg"
+  },
+  {
+   "id": "景観/DSC_9994",
+   "group": "景観",
+   "name": "DSC_9994",
+   "thumb": "/presets/thumb/DSC_9994.jpg",
+   "src": "/presets/view/DSC_9994.jpg"
+  },
+  {
+   "id": "景観/DSC_9995",
+   "group": "景観",
+   "name": "DSC_9995",
+   "thumb": "/presets/thumb/DSC_9995.jpg",
+   "src": "/presets/view/DSC_9995.jpg"
+  },
+  {
+   "id": "景観/DSC_9996",
+   "group": "景観",
+   "name": "DSC_9996",
+   "thumb": "/presets/thumb/DSC_9996.jpg",
+   "src": "/presets/view/DSC_9996.jpg"
+  },
+  {
+   "id": "景観/DSC_9998",
+   "group": "景観",
+   "name": "DSC_9998",
+   "thumb": "/presets/thumb/DSC_9998.jpg",
+   "src": "/presets/view/DSC_9998.jpg"
+  },
+  {
+   "id": "景観/SDIM2779",
+   "group": "景観",
+   "name": "SDIM2779",
+   "thumb": "/presets/thumb/SDIM2779.jpg",
+   "src": "/presets/view/SDIM2779.jpg"
+  },
+  {
+   "id": "景観/SDIM2865",
+   "group": "景観",
+   "name": "SDIM2865",
+   "thumb": "/presets/thumb/SDIM2865.jpg",
+   "src": "/presets/view/SDIM2865.jpg"
+  },
+  {
+   "id": "景観/SDIM2866",
+   "group": "景観",
+   "name": "SDIM2866",
+   "thumb": "/presets/thumb/SDIM2866.jpg",
+   "src": "/presets/view/SDIM2866.jpg"
+  },
+  {
+   "id": "景観/SDIM2876",
+   "group": "景観",
+   "name": "SDIM2876",
+   "thumb": "/presets/thumb/SDIM2876.jpg",
+   "src": "/presets/view/SDIM2876.jpg"
+  }
+ ]
+}

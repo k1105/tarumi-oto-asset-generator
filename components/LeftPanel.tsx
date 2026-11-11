@@ -2,6 +2,7 @@
 // 左の欄。レイヤーの一覧と、素材 (樽見の写真・落としたファイル)
 import { useRef, useState } from 'react';
 import { BG_ID, layerLabel, patchLayer, type Doc, type Layer, type MediaKind } from '@/lib/doc';
+import { mediaUrl } from '@/lib/storage';
 import Icon from './icons';
 import type { Update } from './Stage';
 
@@ -153,7 +154,7 @@ export default function LeftPanel({ doc, sel, setSel, update, presets, assets, b
               <div className="thumbs">
                 {assets.map((a) => (
                   <button key={a.src} type="button" className="thumb" title={a.name} draggable onDragStart={(e) => start(e, a)} onClick={() => onPick(a)}>
-                    {a.kind === 'video' ? <video src={`${a.src}#t=0.1`} muted playsInline preload="metadata" /> : <img src={a.src} alt="" loading="lazy" draggable={false} />}
+                    {a.kind === 'video' ? <video src={`${mediaUrl(a.src)}#t=0.1`} muted playsInline preload="metadata" /> : <img src={mediaUrl(a.src)} alt="" loading="lazy" draggable={false} />}
                     {a.kind === 'video' && (
                       <span className="badge">
                         <Icon name="video" size={12} />

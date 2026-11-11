@@ -1,9 +1,16 @@
 // 書き出し。画像は canvas をそのまま、動画は 1 コマずつ描いて MP4 (H.264 + AAC) にする
-import { ALL_FORMATS, AudioBufferSink, AudioBufferSource, BufferTarget, CanvasSink, CanvasSource, Input, Mp4OutputFormat, Output, UrlSource, canEncodeAudio } from 'mediabunny';
+import { ALL_FORMATS, AudioBufferSink, AudioBufferSource, BlobSource, BufferTarget, CanvasSink, CanvasSource, Input, Mp4OutputFormat, Output, UrlSource, canEncodeAudio } from 'mediabunny';
 import { allLayers, type Doc, type MediaLayer } from './doc';
 import { cropRect, durationOf, render, videoTime, type Resolve, type Source } from './render';
+import { mediaBlob } from './storage';
 
 export const FPS = 30;
+
+/** 動画を読む元。ブラウザの中に保存した素材は中身 (Blob) から、ほかは URL から */
+const source = (src: string) => {
+  const blob = mediaBlob(src);
+  return blob ? new BlobSource(blob) : new UrlSource(new URL(src, location.href));
+};
 
 export function download(blob: Blob, name: string) {
   const url = URL.createObjectURL(blob);
@@ -45,7 +52,7 @@ export async function exportVideo(doc: Doc, resolve: Resolve, onProgress: (ratio
   try {
     onProgress(0, '動画を読んでいます');
     for (const layer of videos) {
-      const input = new Input({ formats: ALL_FORMATS, source: new UrlSource(new URL(layer.src!, location.href)) });
+      const input = new Input({ formats: ALL_FORMATS, source: source(layer.src!) });
       const track = await input.getPrimaryVideoTrack();
       if (!track || !(await track.canDecode())) {
         input.dispose();

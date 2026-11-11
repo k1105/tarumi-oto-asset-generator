@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { allLayers, type Doc, type MediaLayer } from './doc';
 import { videoTime, type Resolve, type Source } from './render';
+import { mediaUrl } from './storage';
 
 type Vid = { src: string; el: HTMLVideoElement };
 
@@ -39,7 +40,7 @@ export function useMedia(doc: Doc, onChange: () => void) {
         el.addEventListener('loadeddata', ping);
         el.addEventListener('seeked', ping);
         el.addEventListener('durationchange', ping);
-        el.src = l.src!;
+        el.src = mediaUrl(l.src!);
         v = { src: l.src!, el };
         videos.current.set(id, v);
       }
@@ -72,7 +73,7 @@ export function useMedia(doc: Doc, onChange: () => void) {
       img = new Image();
       img.crossOrigin = 'anonymous';
       img.onload = () => changed.current();
-      img.src = l.src;
+      img.src = mediaUrl(l.src);
       images.current.set(l.src, img);
     }
     return img.complete && img.naturalWidth ? { el: img, w: img.naturalWidth, h: img.naturalHeight } : null;

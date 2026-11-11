@@ -5,6 +5,7 @@ import { ASPECTS, BG_ID, MAX_COUNT, applyTemplate, aspectOf, findLayer, hasMotio
 import { download, exportImage, exportVideo, fileBase } from '@/lib/export';
 import { durationOf } from '@/lib/render';
 import { loadStroke } from '@/lib/stroke/draw';
+import { addAsset, deleteProject, listAssets, listProjects, readProject, writeProject, type ProjectInfo } from '@/lib/storage';
 import { useMedia } from '@/lib/useMedia';
 import Icon from './icons';
 import Inspector from './Inspector';
@@ -13,7 +14,6 @@ import Preview from './Preview';
 import Stage, { type Mode } from './Stage';
 import './editor.css';
 
-type ProjectInfo = { id: string; name: string; aspect: string; updatedAt: number };
 type Template = { id: string; name: string; aspect: string; doc: unknown };
 type Clock = { t: number; playing: boolean; subs: Set<() => void> };
 
@@ -122,15 +122,14 @@ export default function Editor() {
 
   // ---- 読み込み ----
   const loadLists = useCallback(async () => {
-    const [p, a] = await Promise.all([getJson('/api/projects'), getJson('/api/assets')]);
-    setProjects(p.projects ?? []);
-    setAssets(a.assets ?? []);
-    return (p.projects ?? []) as ProjectInfo[];
+    const [p, a] = await Promise.all([listProjects(), listAssets()]);
+    setProjects(p);
+    setAssets(a);
+    return p;
   }, []);
 
   const openById = useCallback(async (id: string, remember = true) => {
-    const res = await getJson(`/api/projects/${id}`).catch(() => null);
-    const d = normalize(res?.doc);
+    const d = normalize(await readProject(id).catch(() => null));
     if (d) {
       open(d, remember);
       clean.current = d;
@@ -140,7 +139,7 @@ export default function Editor() {
 
   useEffect(() => {
     (async () => {
-      getJson('/api/presets').then((r) => setPresets(r.presets ?? [])).catch(() => {});
+      getJson('/presets/index.json').then((r) => setPresets(r.presets ?? [])).catch(() => {});
       getJson('/api/templates').then((r) => setTemplates(r.templates ?? [])).catch(() => {});
       const list = await loadLists().catch(() => [] as ProjectInfo[]);
       // ?p=<id> で開くプロジェクトを指定できる
@@ -166,8 +165,7 @@ export default function Editor() {
     setSaved('saving');
     const timer = window.setTimeout(async () => {
       try {
-        const r = await fetch(`/api/projects/${doc.id}`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(doc) });
-        if (!r.ok) throw new Error();
+        await writeProject(doc);
         setSaved('saved');
       } catch {
         setSaved('error');
@@ -249,13 +247,12 @@ export default function Editor() {
     setBusy(true);
     try {
       for (const f of files) {
-        const r = await fetch('/api/assets', { method: 'POST', headers: { 'x-file-name': encodeURIComponent(f.name) }, body: f });
-        const j = await r.json().catch(() => ({}));
-        if (r.ok && j.asset) out.push(j.asset);
-        else say(j.error ?? `「${f.name}」を読み込めませんでした`);
+        const r = await addAsset(f).catch(() => ({ asset: undefined, error: `「${f.name}」を読み込めませんでした` }));
+        if (r.asset) out.push(r.asset);
+        else say(r.error ?? `「${f.name}」を読み込めませんでした`);
       }
-      const a = await getJson('/api/assets').catch(() => null);
-      if (a?.assets) setAssets(a.assets);
+      const a = await listAssets().catch(() => null);
+      if (a) setAssets(a);
     } finally {
       setBusy(false);
     }
@@ -393,7 +390,7 @@ export default function Editor() {
   const destroy = useCallback(async () => {
     const d = docRef.current;
     if (!d) return;
-    await fetch(`/api/projects/${d.id}`, { method: 'DELETE' }).catch(() => {});
+    await deleteProject(d.id).catch(() => {});
     const list = (await loadLists().catch(() => [])).filter((p) => p.id !== d.id);
     if (!list[0] || !(await openById(list[0].id))) open(newDoc());
   }, [loadLists, openById, open]);

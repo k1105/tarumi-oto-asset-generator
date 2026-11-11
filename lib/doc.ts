@@ -122,6 +122,8 @@ export const uid = () => Math.random().toString(36).slice(2, 10);
 
 const media = (p: Partial<MediaLayer>): MediaLayer => ({
   type: 'media', id: uid(), kind: 'image', src: null, name: '', x: 0, y: 0, w: 100, h: 100, opacity: 1, zoom: 1, cx: 0.5, cy: 0.5, start: 0, volume: 1, muted: false, ...p,
+  // 前の版は、樽見の写真をその場で縮小して出していた (/api/presets/proxy/<大きさ>/<区分>/<名前>.jpg)。今は public/presets/<大きさ>/<名前>.jpg
+  ...(typeof p.src === 'string' ? { src: p.src.replace(/^\/api\/presets\/proxy\/(thumb|view)\/[^/]+\//, '/presets/$1/') } : {}),
 });
 
 export function newDoc(aspect: AspectId = '3:4', name = '名称未設定'): Doc {
