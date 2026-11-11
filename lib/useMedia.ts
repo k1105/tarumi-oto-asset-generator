@@ -13,6 +13,9 @@ function releaseVideo(el: HTMLVideoElement) {
   el.load();
 }
 
+// SVG を絵にしたもの (画像の要素を忘れると一緒に消える)
+const svgs = new WeakMap<HTMLImageElement, HTMLCanvasElement>();
+
 export function useMedia(doc: Doc, onChange: () => void) {
   const images = useRef(new Map<string, HTMLImageElement>());
   const videos = useRef(new Map<string, Vid>());
@@ -76,7 +79,21 @@ export function useMedia(doc: Doc, onChange: () => void) {
       img.src = mediaUrl(l.src);
       images.current.set(l.src, img);
     }
-    return img.complete && img.naturalWidth ? { el: img, w: img.naturalWidth, h: img.naturalHeight } : null;
+    if (!img.complete || !img.naturalWidth) return null;
+    // SVG は、大きさ (width / height) が書かれていないと、一部を切り出して描くときに位置がずれる。全体を 1 度ふつうの絵にしてから使う
+    if (/\.svg([?#]|$)/i.test(l.src) || /\.svg$/i.test(l.name)) {
+      let c = svgs.get(img);
+      if (!c) {
+        const k = 3000 / Math.max(img.naturalWidth, img.naturalHeight);
+        c = document.createElement('canvas');
+        c.width = Math.max(1, Math.round(img.naturalWidth * k));
+        c.height = Math.max(1, Math.round(img.naturalHeight * k));
+        c.getContext('2d')!.drawImage(img, 0, 0, c.width, c.height);
+        svgs.set(img, c);
+      }
+      return { el: c, w: c.width, h: c.height };
+    }
+    return { el: img, w: img.naturalWidth, h: img.naturalHeight };
   }, []);
 
   /** 枠の動画の長さ (秒)。まだ分からなければ 0 */

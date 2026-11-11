@@ -2,19 +2,19 @@
   "version": 1,
   "id": "p-mwbyezoa-08y4",
   "name": "performer_info",
-  "aspect": "4:3",
-  "w": 1440,
+  "aspect": "1:1",
+  "w": 1080,
   "h": 1080,
   "bgColor": "#ffffff",
   "bg": {
     "type": "media",
     "id": "bg",
     "kind": "image",
-    "src": "/api/presets/proxy/view/%E6%99%AF%E8%A6%B3/DSC_0152.jpg",
-    "name": "DSC_0152",
+    "src": "/presets/view/DSC_0056.jpg",
+    "name": "DSC_0056",
     "x": 0,
     "y": 0,
-    "w": 4320,
+    "w": 1080,
     "h": 1080,
     "opacity": 1,
     "zoom": 1,
@@ -32,31 +32,15 @@
   },
   "layers": [
     {
-      "type": "rect",
-      "id": "9g5q63av",
-      "fill": "",
-      "stroke": "#00ff36",
-      "strokeWidth": 24,
-      "x": 0,
-      "y": 0,
-      "w": 1440,
-      "h": 1080,
-      "opacity": 1,
-      "locked": true,
-      "tpl": "frame",
-      "page": 0,
-      "hidden": false
-    },
-    {
       "type": "media",
-      "id": "wdss2ybq",
+      "id": "kaa871ix",
       "kind": "image",
-      "src": "/logos/name-line-green.svg",
-      "name": "ロゴタイプ (緑)",
-      "x": 1084,
-      "y": 967,
-      "w": 300,
-      "h": 57,
+      "src": "/presets/view/DSC_0127.jpg",
+      "name": "DSC_0127",
+      "x": 60,
+      "y": 171,
+      "w": 960,
+      "h": 940,
       "opacity": 1,
       "zoom": 1,
       "cx": 0.5,
@@ -64,43 +48,41 @@
       "start": 0,
       "volume": 1,
       "muted": false,
-      "tpl": "logo",
+      "shape": "round",
+      "tpl": "photo",
       "page": 0
     },
     {
       "type": "text",
-      "id": "dquzeamt",
-      "text": "開催まであと\n10日",
-      "font": "Helvetica, \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", sans-serif",
-      "size": 51,
+      "id": "mjwh1p3h",
+      "text": "aaaa",
+      "font": "\"Tarumi OTO Stroke\", Helvetica, \"Hiragino Sans\", sans-serif",
+      "size": 189,
       "weight": 400,
-      "color": "#000000",
-      "align": "left",
-      "lineHeight": 1.7,
-      "tracking": 0,
-      "x": 388,
-      "y": 540,
-      "w": 664,
+      "color": "#00ff36",
+      "align": "center",
+      "lineHeight": 1.3,
+      "tracking": -0.01,
+      "x": 0,
+      "y": 48,
+      "w": 1080,
       "h": 0,
       "opacity": 1,
-      "valign": "middle",
-      "box": {
-        "fill": "#ffffff",
-        "stroke": "#00ff36",
-        "strokeWidth": 16,
-        "padX": 72,
-        "padY": 64
+      "motion": {
+        "on": true,
+        "start": 0,
+        "duration": 3,
+        "order": "stagger"
       },
-      "tpl": "orphan",
+      "tpl": "head",
       "page": 0,
       "kern": [
         0
-      ],
-      "hidden": true
+      ]
     },
     {
       "type": "text",
-      "id": "hrcpd7o5",
+      "id": "q21cwr37",
       "text": "アーティスト/作家/DJ。アンビエント、ダウンテンポ、テクノを軸としたDJを得意とし、DJを芸術実践に接続することを試みている。他、架空の生命体ambient friend(通称フレンズ)を媒介に、身近な環境とのあいだにある見えない関係性を探っている。",
       "font": "\"Tarumi OTO Stroke\", Helvetica, \"Hiragino Sans\", sans-serif",
       "size": 30,
@@ -109,7 +91,7 @@
       "align": "left",
       "lineHeight": 1.7,
       "tracking": 0,
-      "x": 687,
+      "x": 327,
       "y": 728,
       "w": 693,
       "h": 0,
@@ -121,14 +103,14 @@
         "padX": 24,
         "padY": 26
       },
-      "tpl": "orphan",
-      "page": 0,
       "motion": {
         "on": true,
         "start": 0,
         "duration": 4,
         "order": "stagger"
       },
+      "tpl": "body",
+      "page": 0,
       "kern": [
         0,
         0,
@@ -256,8 +238,7 @@
         0,
         0,
         0
-      ],
-      "hidden": true
+      ]
     },
     {
       "type": "media",
@@ -265,7 +246,7 @@
       "kind": "image",
       "src": "/assets/mwc5hu6y-IMG_8444_-_Mio_TAKEYAMA.jpeg",
       "name": "IMG_8444_-_Mio_TAKEYAMA.jpeg",
-      "x": 240,
+      "x": 60,
       "y": 171,
       "w": 960,
       "h": 940,
@@ -283,10 +264,8 @@
     }
   ],
   "duration": null,
-  "count": 3,
+  "count": 1,
   "templates": [
-    "frame-logo",
-    null,
-    null
+    "performer"
   ]
 }

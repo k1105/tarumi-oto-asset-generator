@@ -1,10 +1,10 @@
 {
   "version": 1,
   "id": "frame-logo",
-  "name": "全体に緑の縁、右下にロゴタイプ",
-  "aspect": "3:4",
+  "name": "縁+ロゴタイプ",
+  "aspect": "1:1",
   "w": 1080,
-  "h": 1440,
+  "h": 1080,
   "bgColor": "#ffffff",
   "count": 1,
   "duration": null,
@@ -24,7 +24,7 @@
     "x": 0,
     "y": 0,
     "w": 1080,
-    "h": 1440
+    "h": 1080
   },
   "layers": [
     {
@@ -36,15 +36,15 @@
       "x": 0,
       "y": 0,
       "w": 1080,
-      "h": 1440,
+      "h": 1080,
       "opacity": 1,
       "locked": true
     },
     {
       "type": "media",
       "kind": "image",
-      "src": "/logos/name-line-green.svg",
-      "name": "ロゴタイプ (緑)",
+      "src": "/logos/logo.svg",
+      "name": "ロゴ",
       "opacity": 1,
       "zoom": 1,
       "cx": 0.5,
@@ -53,10 +53,10 @@
       "volume": 1,
       "muted": false,
       "id": "logo",
-      "x": 724,
-      "y": 1327,
-      "w": 300,
-      "h": 57
+      "x": 255,
+      "y": 408,
+      "w": 570,
+      "h": 265
     }
   ]
 }
