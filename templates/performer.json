@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "id": "performer",
+  "name": "出演者の紹介 (見出し・写真・縁つきの文章)",
+  "aspect": "3:4",
+  "w": 1080,
+  "h": 1440,
+  "bgColor": "#ffffff",
+  "count": 1,
+  "duration": null,
+  "bg": {
+    "type": "media",
+    "kind": "image",
+    "src": null,
+    "name": "",
+    "opacity": 1,
+    "zoom": 1,
+    "cx": 0.5,
+    "cy": 0.5,
+    "start": 0,
+    "volume": 1,
+    "muted": false,
+    "id": "bg",
+    "x": 0,
+    "y": 0,
+    "w": 1080,
+    "h": 1440
+  },
+  "layers": [
+    {
+      "type": "media",
+      "id": "photo",
+      "kind": "image",
+      "src": null,
+      "name": "",
+      "x": 60,
+      "y": 171,
+      "w": 960,
+      "h": 940,
+      "opacity": 1,
+      "zoom": 1,
+      "cx": 0.5,
+      "cy": 0.5,
+      "start": 0,
+      "volume": 1,
+      "muted": false,
+      "shape": "round"
+    },
+    {
+      "type": "text",
+      "id": "head",
+      "text": "Artist Name",
+      "font": "\"Tarumi OTO Stroke\", Helvetica, \"Hiragino Sans\", sans-serif",
+      "size": 189,
+      "weight": 400,
+      "color": "#00ff36",
+      "align": "center",
+      "lineHeight": 1.3,
+      "tracking": -0.01,
+      "x": 0,
+      "y": 48,
+      "w": 1080,
+      "h": 0,
+      "opacity": 1,
+      "motion": {
+        "on": true,
+        "start": 0,
+        "duration": 3,
+        "order": "stagger"
+      }
+    },
+    {
+      "type": "text",
+      "id": "body",
+      "text": "ここに出演者の紹介の文章が入ります。写真の右下に重ねて置く、緑の縁つきの枠です。文章の量に合わせて、枠は下へ伸びます。",
+      "font": "\"Tarumi OTO Stroke\", Helvetica, \"Hiragino Sans\", sans-serif",
+      "size": 30,
+      "weight": 400,
+      "color": "#000000",
+      "align": "left",
+      "lineHeight": 1.7,
+      "tracking": 0,
+      "x": 327,
+      "y": 1088,
+      "w": 693,
+      "h": 0,
+      "opacity": 1,
+      "box": {
+        "fill": "#ffffff",
+        "stroke": "#00ff36",
+        "strokeWidth": 12,
+        "padX": 24,
+        "padY": 26
+      },
+      "motion": {
+        "on": true,
+        "start": 0,
+        "duration": 4,
+        "order": "stagger"
+      }
+    }
+  ]
+}

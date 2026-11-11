@@ -1,0 +1,62 @@
+/* 道具の画面。白いパネルと淡い灰色の台、選んでいるものだけに色を使う */
+@font-face {
+  font-family: "Tarumi OTO Stroke";
+  src: url("/fonts/TarumiOTOStroke-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+:root {
+  --stage: #ecece8;
+  --panel: #ffffff;
+  --line: #e3e3de;
+  --text: #1b1b19;
+  --sub: #77776f;
+  --hover: #f2f2ee;
+  --accent: #4a3aff; /* 選んでいるもの・落とす先 */
+  --accent-soft: #edebff;
+  --guide: #ff2e7e;
+  --green: #18ff14; /* 樽見OTO鉄道の緑 (印だけに使う) */
+  --error: #b3261e;
+  --ui: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body {
+  background: var(--stage);
+  color: var(--text);
+  font: 12px/1.5 var(--ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}

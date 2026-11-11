@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "id": "center-card",
+  "name": "中央に緑の縁のテキスト",
+  "aspect": "3:4",
+  "w": 1080,
+  "h": 1440,
+  "bgColor": "#ffffff",
+  "count": 1,
+  "duration": null,
+  "bg": {
+    "type": "media",
+    "kind": "image",
+    "src": null,
+    "name": "",
+    "opacity": 1,
+    "zoom": 1,
+    "cx": 0.5,
+    "cy": 0.5,
+    "start": 0,
+    "volume": 1,
+    "muted": false,
+    "id": "bg",
+    "x": 0,
+    "y": 0,
+    "w": 1080,
+    "h": 1440
+  },
+  "layers": [
+    {
+      "type": "text",
+      "id": "body",
+      "text": "ここに文章が入ります。\n写真を背景に敷いて、\n短い文章を置く枠です。",
+      "font": "Helvetica, \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+      "size": 52,
+      "weight": 400,
+      "color": "#000000",
+      "align": "left",
+      "lineHeight": 1.7,
+      "tracking": 0,
+      "x": 208,
+      "y": 720,
+      "w": 664,
+      "h": 0,
+      "opacity": 1,
+      "valign": "middle",
+      "box": {
+        "fill": "#ffffff",
+        "stroke": "#00ff36",
+        "strokeWidth": 16,
+        "padX": 72,
+        "padY": 64
+      }
+    }
+  ]
+}

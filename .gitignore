@@ -1,0 +1,10 @@
+node_modules
+.next
+.env
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+
+# 落とした素材 (大きい) と写真の縮小コピー
+/data/assets/
+/data/cache/

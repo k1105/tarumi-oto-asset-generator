@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "id": "bottom-band",
+  "name": "下に緑の帯とロゴタイプ",
+  "aspect": "3:4",
+  "w": 1080,
+  "h": 1440,
+  "bgColor": "#ffffff",
+  "count": 1,
+  "duration": null,
+  "bg": {
+    "type": "media",
+    "kind": "image",
+    "src": null,
+    "name": "",
+    "opacity": 1,
+    "zoom": 1,
+    "cx": 0.5,
+    "cy": 0.5,
+    "start": 0,
+    "volume": 1,
+    "muted": false,
+    "id": "bg",
+    "x": 0,
+    "y": 0,
+    "w": 1080,
+    "h": 1440
+  },
+  "layers": [
+    {
+      "type": "rect",
+      "id": "band",
+      "fill": "#00ff36",
+      "x": 0,
+      "y": 1161,
+      "w": 1080,
+      "h": 279,
+      "opacity": 1
+    },
+    {
+      "type": "media",
+      "kind": "image",
+      "src": "/logos/name-line-white.svg",
+      "name": "ロゴタイプ (白)",
+      "opacity": 1,
+      "zoom": 1,
+      "cx": 0.5,
+      "cy": 0.5,
+      "start": 0,
+      "volume": 1,
+      "muted": false,
+      "id": "logo",
+      "x": 60,
+      "y": 1209,
+      "w": 960,
+      "h": 183
+    }
+  ]
+}
